@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<?import javafx.scene.Cursor?>
+<BorderPane xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ooplab10.HelloController">
+  <center>
+    <AnchorPane prefHeight="365.0" prefWidth="603.0" BorderPane.alignment="CENTER">
+      <children>
+
+        <Label fx:id="infoIntegralLabel" layoutX="7.0" layoutY="3.0" prefHeight="23.0" prefWidth="187.0" />
+        <Label fx:id="infoTimeLabel" layoutX="7.0" layoutY="26.0" prefHeight="23.0" prefWidth="187.0" />
+      </children></AnchorPane>
+  </center>
+  <top>
+    <VBox prefHeight="67.0" prefWidth="603.0" BorderPane.alignment="CENTER">
+      <children>
+        <MenuBar><menus>
+            <Menu mnemonicParsing="false" text="File"><items><MenuItem mnemonicParsing="false" text="Close" /></items></Menu>
+            <Menu mnemonicParsing="false" text="Edit"><items><MenuItem mnemonicParsing="false" text="Delete" /></items></Menu>
+            <Menu mnemonicParsing="false" text="Help"><items><MenuItem mnemonicParsing="false" text="About" /></items></Menu></menus>
+        </MenuBar>
+        <ToolBar prefHeight="48.0" prefWidth="603.0">
+          <items>
+            <TextField fx:id="countIntervalField" prefWidth="100.0" promptText="Interval">
+              <cursor>
+                <Cursor fx:constant="TEXT" />
+              </cursor></TextField>
+            <TextField fx:id="threadsField" prefWidth="100.0" promptText="Threads">
+              <cursor>
+                <Cursor fx:constant="TEXT" />
+              </cursor></TextField>
+            <Button mnemonicParsing="false" onAction="#Integrate" text="Integrate" />
+          </items>
+        </ToolBar>
+      </children>
+    </VBox>
+  </top>
+</BorderPane>
